@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./ContactStyles.module.css";
 import email from "../../assets/Email.png";
-import phone from "../../assets/Phone.png";
+import phone from "../../assets/phone.png";
 function Contact() {
   return (
     <section id="contact" className={styles.container}>

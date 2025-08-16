@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contactItem {
+  display: flex;
+  flex-direction: row; /* icon left, text right */
+  align-items: center;
+  gap: 10px; /* spacing between icon and text */
+}
+
+h4 {
+  font-size: 45px;
+  font-family: "Rubik", sans-serif;
+  color: #222;
+}
+
+.emailIcon {
+  width: 100px;
+  height: 100px;
+}

@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers everything horizontally */
+  text-align: center;
+  width: 100%;
+}
+
+.projectsContainer {
+  display: flex;
+  justify-content: center; /* centers project items */
+  width: 100%;
+}
+
+.projectItem {
+  display: flex;
+  flex-direction: column; /* stack image and text */
+  align-items: center;
+  text-align: center;
+  max-width: 600px; /* constrains the whole item */
+  width: 100%;
+}
+
+.projectImage {
+  width: 100%; /* fills projectItem max-width */
+  height: auto; /* keeps aspect ratio */
+  display: block;
+}

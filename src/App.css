@@ -1,0 +1,68 @@
+:root {
+  --background-color: #fff;
+  --btn-color: #007bff;
+  --btn-text-color: #e72020;
+  --project-card-bg: #ffffff00;
+  --text-color: #222;
+  --form--text-color: #555;
+  --footer-text-color: #888;
+}
+
+body {
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 60px;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: var(--text-color);
+}
+
+h2,
+h3,
+p {
+  font-family: "Roboto Mono", monospace;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+}
+
+h2,
+h3 {
+  font-size: 30px;
+}
+
+h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 60px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #222;
+}
+
+.sectionTitle {
+  margin-bottom: 30px;
+}
+
+.hover {
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}

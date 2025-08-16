@@ -1,54 +1,45 @@
-/* Gradient animation */
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; /* keeps content centered horizontally */
-  gap: 10px;
-  text-align: center;
-  min-height: 100vh;
-  width: 100%;
-  padding: 20px;
-}
-
 /* Hero image */
 .hero {
-  max-width: 90%; /* don’t let it fill edge-to-edge on small screens */
-  max-height: 40vh; /* take up at most 40% of viewport height */
+  max-width: min(90%, 500px); /* keeps it responsive but not too huge */
+  max-height: 35vh; /* take up at most 35% of viewport height */
   height: auto; /* keep aspect ratio */
   display: block;
   object-fit: contain;
   margin: 0 auto; /* center horizontally */
 }
 
-/* Social links container */
-.span {
+/* Container for the whole hero section */
+.container {
   display: flex;
-  gap: 25px;
-  justify-content: center;
+  flex-direction: column; /* stack image + text vertically */
+  align-items: center; /* ✅ center horizontally */
+  justify-content: center; /* ✅ center vertically if parent allows */
+  text-align: center; /* ✅ center text inside */
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
 }
 
-.span a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* Keep your hero image styles */
+.hero {
+  max-width: min(90%, 500px);
+  max-height: 35vh;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
-.span img {
-  height: 30px;
-  width: 30px;
+/* Text block */
+.info {
+  max-width: 800px; /* prevent text from stretching too wide */
+  text-align: center; /* ✅ center text inside */
+  margin-top: 20px;
+}
+
+/* Paragraph container */
+.paragraphContainer {
+  margin-top: 15px;
+  padding: 0 10px; /* ✅ keeps text from touching edges on mobile */
 }
 
 /* Typing text */
@@ -58,77 +49,24 @@
   white-space: nowrap;
   overflow: hidden;
   min-width: 34ch;
-}
-
-.cursor {
-  display: inline-block;
-  width: 3px;
-  background-color: rgb(250, 248, 247);
-  margin-left: 3px;
-  animation: blink 0.15s infinite;
-}
-
-@keyframes blink {
-  0%,
-  50% {
-    opacity: 1;
-  }
-  51%,
-  100% {
-    opacity: 0;
-  }
-}
-
-/* Paragraph container */
-.paragraphContainer {
-  max-width: 70ch;
-  margin: 0 auto;
-  text-align: center;
-}
-
-/* Info section */
-.info {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  font-size: clamp(1rem, 2.5vw, 1.5rem); /* scales smoothly between devices */
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .typingText {
-    font-size: 1.2rem;
-  }
-
   .hero {
-    max-width: 100%;
+    max-width: 80%; /* shrink a little more on tablets */
+    max-height: 30vh; /* make sure typing animation stays visible */
   }
 }
 
 @media (max-width: 480px) {
+  .hero {
+    max-width: 70%; /* smaller for phones */
+    max-height: 25vh;
+  }
+
   .typingText {
-    font-size: 1rem;
+    font-size: 1rem; /* make sure text isn’t too big */
   }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* Fade-in class */
-.fadeIn {
-  animation: fadeIn 10s ease forwards; /* adjust duration as needed */
-}
-
-body {
-  margin: 0;
-  min-height: 100vh;
-
-  background: linear-gradient(270deg, #1261b6, #7d8494);
-  background-size: 600% 600%;
-  animation: gradient 20s ease infinite;
 }

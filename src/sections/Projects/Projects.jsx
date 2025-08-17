@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./ProjectsStyles.module.css";
 import diseaseDefensePoster from "../../assets/DiseaseDefensePoster.png";
 import RasberryPI_Stock_Tracker from "../../assets/RasberryPI_Stock_Tracker.jpg";
-import cgLogo from "../../assets/CG.png";
+import cgLogo from "../../assets/CG2.png";
 
 function Projects() {
   return (

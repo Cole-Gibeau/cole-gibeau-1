@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import styles from "./HeroStyles.module.css";
 import linkedinIcon from "../../assets/linkedinLogo.png";
-import cgLogo from "../../assets/CG.png";
+import cgLogo from "../../assets/CG2.png";
 function Hero() {
   const fullText = "Management Information Systems Major";
   const [displayText, setDisplayText] = useState("");

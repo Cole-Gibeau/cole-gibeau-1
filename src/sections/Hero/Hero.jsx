@@ -43,11 +43,15 @@ function Hero() {
         <div className={styles.paragraphContainer}>
           <p>
             Hi, I’m Cole — a detail-oriented and motivated aspiring IT
-            professional. I have a strong passion for technology,
-            problem-solving skills, and a knack for learning quickly. Currently
-            studying Management Information Systems at Minnesota State
-            University, Mankato, I’m looking to apply my skills in real-world
-            projects and grow as a developer.
+            professional with a strong passion for technology and
+            problem-solving. Currently studying Management Information Systems
+            at Minnesota State University, Mankato, I bring foundational
+            knowledge in programming, databases, and IT systems, along with a
+            proven ability to learn quickly and adapt to new challenges. Known
+            for reliability, dedication, and a strong work ethic, I’m seeking an
+            IT internship to enhance my skills through real-world projects,
+            contribute to high-quality solutions, and continue growing in the
+            technology field.
           </p>
         </div>
         <div>
